@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body class="mt-8 mr-10 ml-10">
 
     <header class="flex justify-between">
         
             <div>
-                <img class=" h-[75px] ml-[20px]"src="img/logo.svg" alt="">
+                <img class=" h-[65px] ml-10"src="img/logo.png" alt="">
             </div>
 
-            <div class="flex gap-24 items-center">
+            <div class="flex gap-15 items-center">
 
-                <p class="text-[20px] text-[#667085]">Sobre</p>
-                <p class="text-[20px] text-[#667085]">Professores</p>
-                <p class="text-[20px] text-[#667085]">Alunos</p>
-                <p class="text-[20px] text-[#667085]">Projetos</p>
+                <p class="text-[17px] text-[#667085]">Sobre</p>
+                <p class="text-[17px] text-[#667085]">Professores</p>
+                <p class="text-[17px] text-[#667085]">Alunos</p>
+                <p class="text-[17px] text-[#667085]">Projetos</p>
 
-                <button class="bg-[#182230] rounded-[15px] px-5 py-4 mr-15 items-center text-white">
-                    <strong class="text-[20px]">Documentos</strong>
+                <button class="bg-[#182230] rounded-[15px] px-5 py-3 mr-15 items-center text-white">
+                    <strong class="text-[17px]">Documentos</strong>
                 </button>
             </div>
 
@@ -30,54 +31,87 @@
 
     <main class="container m-w-7xl mx-auto">
 
-        <section class="flex flex-col items-center bg-[#F2F4F7] mx-5 my-10 rounded-[10px] p-30 h-160">
+        <section class="flex flex-col items-center bg-[#F2F4F7] ml-10 my-10 rounded-[15px] p-20 h-120">
 
-            <strong class="text-[60px] max-w-170 text-[#182230]">Depois de muita espera, ela finalmente chegou!</strong>
-            <p class="my-10 max-w-180 text-[25px] text-[#667085]">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
+            <strong class="text-[45px] max-w-140 text-[#182230] text-center">Depois de muita espera, ela finalmente chegou!</strong>
+            <p class="my-5 max-w-130 text-[18px] text-[#667085] text-center">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
 
-            <div class="flex gap-8 justify-center my-8 mr-20">
+            <div class="flex gap-8 justify-center my-8">
 
-                <button class="bg-[#182230] text-white rounded-[15px] p-7 ">
-                    <strong class="text-[20px]">Ser feliz agora!</strong>
+                <button class="bg-[#182230] text-white rounded-[10px] py-5 px-9">
+                    <strong class="text-[15px] ">Ser feliz agora!</strong>
                 </button>
-                <button class="bg-transparent text-black border rounded-[15px] p-7">
-                    <strong class="text-[20px]">Ficar triste</strong>
+                <button class="bg-transparent text-black border rounded-[10px] py-5 px-13">
+                    <strong class="text-[15px]">Ficar triste</strong>
                 </button>
 
             </div>
         </section>
 
-        <section class="flex mx-5 my-20">
-
-            <div class="flex gap-31 mx-5 items-center">
-                <img class="h-8" src="img/nasa.png" alt="">
-                <img class="h-9" src="img/spotify.png" alt="">
-                <img class="h-11" src="img/google.png" alt="">
-                <img class="h-11" src="img/instagram.png" alt="">
-                <img class="h-8" src="img/microsoft.png" alt="">
-                <img class="h-9" src="img/dropbox.png" alt="">
-            </div>
+        <section>
+            <ul class="flex justify-between">
+                <li><img src="img/nasa.png" alt=""></li>
+                <li><img src="img/spotify.png" alt=""></li>
+                <li><img src="img/google.png" alt=""></li>
+                <li><img src="img/facebook.png" alt=""></li>
+                <li><img src="img/microsoft.png" alt=""></li>
+                <li><img src="img/instagram.png" alt=""></li>
+                <li><img src="img/dropbox.png" alt=""></li>
+            </ul>
         </section>
 
-        <section class="flex justify-between my-20 text-gray-500">
+          <section class="flex gap-20 my-20 text-gray-500">
+      <div class="flex gap-4 items-baseline">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>Ela é bonita</strong>
+          <p>Além de linda, ela é a mais top.</p>
+        </div>
+      </div>
+      
+      <div class="flex gap-4 items-baseline">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>O azul destaque</strong>
+          <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
+        </div>
+      </div>
+      <div class="flex gap-4 items-baseline">
+        <i class="fa-solid fa-chevron-right text-sm"></i>
+        <div>
+          <strong>Webeti</strong>
+          <p>O nosso mascote é um gênio da informática.</p>
+        </div>
+      </div>
+     </section>
 
-            <div class="flex gap-4 items-baseline">
-                <i class="fa-solid fa-chevron-right text-sm"></i>
-                <div>
-                    <img src="img/Vector.png" alt="">
-                    <strong>Ela é bonita</strong>
-                    <p>Além de linda, é a mais top.</p>
-                </div>
-            </div>
+      <figure><img src="img/fundo.png" class="w-full" alt="Imagem destaque da camiseta"></figure>
+    
+     <section class="flex flex-col items-center p-10">
 
+      <h1 class="text-[40px] font-bold">Alunos que já compraram.</h1>
+      <p class="max-w-110 my-3 text-center text-gray-500">Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+    </section>
 
-        </section>
+    <section class="flex gap-50 mb-20 justify-center text-center">
 
+        <div>
+            <h1 class="font-bold text-[40px]">234+</h1>
+            <p class="text-gray-500">Primeiro número</p>
+        </div>
 
-
-
-
-
+        <div>
+            <h1 class="font-bold text-[40px]">38,903+</h1>
+            <p class="text-gray-500">Segundo número</p>
+        </div>
+        
+        <div>
+            <h1 class="font-bold text-[40px]">154+</h1>
+            <p class="text-gray-500">Terceiro número</p>
+        </div>
+        
+    </section>
+      
 
 
     </main>
