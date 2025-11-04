@@ -5,67 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 </head>
 
 <body class="grid">
-    <header class="grid grid-cols-2 border-b max-w-screen">  
+    <header class="grid grid-cols-2 border-b border-[#CCCCCC] max-w-screen bg-[#F6F6F6]">  
          
         <section class="grid grid-cols-2">
-            <img class="align-self-center" src="img/aw.png" alt="">
+            <img class="self-center p-4 pl-7" src="img/aw.png" alt="">
             
         </section>
 
-        <section class="grid grid-cols-2 justify-self-end p-2 pr-10">
-            <img class="justify-self-end h-13"src="img/logo.png" alt="">
+        <section class="grid grid-cols-2 justify-self-end p-2 pr-10 items-center gap-3">
+            <img class="justify-self-end"src="img/logo.png" alt="">
 
-            <div>
-                <p>John Doe</p>
-                <p>Agência Web</p>
+            <div class="text-[13px] font-[Sora]">
+                <p class="font-extrabold">John Doe</p>
+                <p class="text-[#808080]">Agência Web</p>
             </div>
         </section>
              
     </header> 
 
-    <section class="flex">
+    <section class="flex font-[Sora]">
 
-        <section class="border-r h-screen w-60">
+        <section class="flex flex-col gap-5 border-r border-[#CCCCCC] h-auto w-85 z-10 ">
 
-            <strong>Canal do Cliente</strong>
+                <div class="text-center pt-8">
+                    <strong class=" text-[25px]">Canal do Cliente</strong>
+                </div>
 
-                <div>
-                    <p>Loja de projetos</p>
-                    <p>dashboard</p>
-                    <p>Compra de créditos</p>
-                    <p>Concluídos</p>
+                <div class="flex flex-col gap-3">
+
+                    <div class="flex gap-2 pl-8">
+                        <img src="img/market.png" alt="">
+                        <p>Loja de projetos</p>
+                    </div>
+
+                    <div class="flex flex-col pl-15 gap-3">
+                        <p>dashboard</p>
+                        <p>Compra de créditos</p>
+                        <p>Concluídos</p>
+                    </div>
                 </div>
             
-            <div>
+            <div class="flex pl-7 gap-2">
                 <img src="img/ciclo.png" alt="">
                 <p>Gestão de projetos</p>
             </div>
             
-            <div>
+            <div class="flex pl-8 gap-2">
                 <img src="img/icon color.png" alt="">
                 <p>Campanhas</p>
             </div>
 
         </section>
 
-        <main class="w-screen">
+        <main class="container max-w-6xl h-250 font-[Sora]">
 
-            <img class="flex pl-10 pt-10 w-360" src="img/banner.png" alt="">
+            <img class="flex pl-8 pt-10 w-229 " src="img/banner.png" alt="">
 
-            <section>
-                <div>
+            <section class="">
 
-                </div>
+                <section class="m-8">
+                    <strong class="text-[30px]">
+                        Compre pontos e distribua como quiser
+                    </strong>
+                </section>
+
+                <section class="flex gap-5 ">
+
+                    <section class="border ml-8 rounded-lg border-[#CCCCCC] justify-items-center p-4 max-h-80 max-w-70">
+                        <img class="" src="img/designdeapp.png" alt="">
+
+                        <section class="grid justify-items-center max-w-68">
+
+                            <div class="text-[15px] py-4 pb-10">
+                                <p>Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class="grid grid-cols-2 text-black">
+                                    <strong>Comprar créditos</strong>
+
+                                    <div class="justify-items-center">
+                                        <img class="" src="img/icon.png" alt="">
+                                    </div>
+                                
+                                </div>
+
+                                <div class="text-[15px]">
+                                    <p>5 créditos por R$10.000,00</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </section>
+
+
+                    <section class="border rounded-lg border-[#CCCCCC] justify-items-center p-4 max-h-80 max-w-70">
+                        <img class="" src="img/ponto.png" alt="">
+
+                        <section class="grid justify-items-center max-w-68">
+
+                            <div class="text-[15px] py-4 pb-10">
+                                <p>Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class="grid grid-cols-2 text-black">
+                                    <strong>Comprar créditos</strong>
+
+                                    <div class="justify-items-center">
+                                        <img class="" src="img/icon" alt="">
+                                    </div>
+                                
+                                </div>
+
+                                <div class="text-[15px]">
+                                    <p>5 créditos por R$10.000,00</p>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </section>
+
+                    <section class="border  rounded-lg border-[#CCCCCC] justify-items-center p-4 max-h-80 max-w-70">
+                        <img class="" src="img/siteswordpress.png" alt="">
+
+                        <section class="grid justify-items-center max-w-68">
+
+                            <div class="text-[15px] py-4 pb-10">
+                                <p>Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.</p>
+                            </div>
+
+                            <div class="">
+
+                                <div class="grid grid-cols-2 text-black">
+                                    <strong>Comprar créditos</strong>
+
+                                    <div class="justify-items-center">
+                                        <img class="" src="img/icon.png" alt="">
+                                    </div>
+                                
+                                </div>
+
+                                <div class="text-[15px]">
+                                    <p>5 créditos por R$10.000,00</p>
+                                </div>
+                            </div>
+
+                        </section>
+                    </section>
+
+                </section>
             </section>
         </main>
 
     </section>
 
-    <footer>
-
+    <footer class="border-t border-[#CCCCCC]">
+        <img class="p-3 justify-self-end" src="img/Vector.png" alt="">
     </footer>
     
 </body>
