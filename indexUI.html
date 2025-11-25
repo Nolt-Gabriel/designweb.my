@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,39 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-white">
-    <section class="flex justify-center items-center h-[500px]">
-        <div class="card">
-            <div class="card-body">
-                <div>
-                    
+<body class="">
+
+    <header class="flex justify-between items-center px-[100px] pt-8">
+        <section>
+            <img class="h-[70px]" src="img/logo.png" alt="">
+        </section>
+        <section class="flex gap-10 ">
+            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Sobre</button>
+            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Professores</button>
+            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Alunos</button>
+            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Projetos</button>
+            <button class="btn btn-neutral hover:bg-sky-700 hover:text-white hover:border-hidden text-[20px] font-bold">Documentos</button>
+        </section>
+    </header>
+        
+
+    <main>
+        <section class="">
+            <div class="hero bg-gray-200 mt-10 max-w-6xl mx-auto rounded-[20px] p-10">
+                <div class="hero-content">
+                    <div class="flex flex-col gap-8 text-center max-w-[500px]">
+                        <strong class="text-[40px]">Depois de muita espera, ela finalmente chegou!</strong>
+                        <p class="text-[18px]">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
+                        <div class="flex justify-center gap-10">
+                            <button class="btn btn-primary bg-[#182230] border-hidden">Ser feliz agora!</button>
+                            <button class="btn btn-outline">Ficar triste</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-        </div>
-        <div class="flex gap-8">
-            <div>
-                <button class="btn btn-outline text-black hover:bg-sky-700 hover:border-sky-500 hover:text-white">Venha ser feliz!</button>
-            </div>
-
-            <div>
-                <button class="btn btn-outline text-black border-black hover:bg-black hover:text-white">Ficar triste</button>
-            </div>
-               
-        </div>
-    </section>
+            </div> 
+        </section>
+        
+    </main>
 </body>
+
 </html>
