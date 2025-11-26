@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DaisyUI - Landing Page</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4/dist/full.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="">
@@ -15,16 +16,17 @@
             <img class="h-[70px]" src="img/logo.png" alt="">
         </section>
         <section class="flex gap-10 ">
-            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Sobre</button>
-            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Professores</button>
-            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Alunos</button>
-            <button class="btn btn-primary bg-transparent border-hidden text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Projetos</button>
+            <button class="btn btn-primary bg-transparent border-hidden rounded-[30px] text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Sobre</button>
+            <button class="btn btn-primary bg-transparent border-hidden rounded-[30px] text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Professores</button>
+            <button class="btn btn-primary bg-transparent border-hidden rounded-[30px] text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Alunos</button>
+            <button class="btn btn-primary bg-transparent border-hidden rounded-[30px] text-[#667085] hover:bg-sky-700 hover:text-white text-[20px] font-light">Projetos</button>
             <button class="btn btn-neutral hover:bg-sky-700 hover:text-white hover:border-hidden text-[20px] font-bold">Documentos</button>
         </section>
     </header>
         
 
     <main>
+        <!-- Hero -->
         <section class="">
             <div class="hero bg-gray-200 mt-10 max-w-6xl mx-auto rounded-[20px] p-10">
                 <div class="hero-content">
@@ -39,7 +41,75 @@
                 </div>
             </div> 
         </section>
+        <!-- Logos e marcas -->
+        <section>
+            <div class="flex justify-around mt-10 items-center mx-10">
+                <img src="img/nasa.png" alt="">
+                <img src="img/spotify.png" alt="">
+                <img src="img/google.png" alt="">
+                <img src="img/facebook.png" alt="">
+                <img src="img/microsoft.png" alt="">
+                <img src="img/instagram.png" alt="">
+                <img src="img/dropbox.png" alt="">
+            </div>
+        </section>
+        <!-- Cards -->
+        <section class="flex justify-around mt-10 border-t p-10 m-5">
+
+            <section class="flex items-baseline gap-4">
+
+              <i class="fa-solid fa-chevron-right"></i>
+                <div class="flex flex-col text-left items-start">
+                    <p class="font-bold">Ela é bonita!</p>
+                    <p>Além de linda, ela é a mais top.</p>
+                </div>
+
+            </section>
+
+            <section class="flex items-baseline gap-4 hover:border-b-black">
+
+                <i class="fa-solid fa-chevron-right"></i>
+                <div class="flex flex-col text-left items-start">
+                    <p class="font-bold">O azul destaque</p>
+                    <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
+                </div>
+
+            </section>
+            <section class="flex items-baseline gap-4 ">
+
+                <i class="fa-solid fa-chevron-right"></i>
+                <div class="flex flex-col text-left items-start">
+                    <p class="font-bold">Webeti</p>
+                    <p>O nosso mascote é um gênio da informática.</p>
+                </div>
+
+            </section>
+        </section>
+
+        <section class="flex justify-center mx-20">
+            <figure><img src="img/fundo.png" alt=""></figure>
+        </section>
         
+        <section>
+            <div class="flex flex-col items-center m-10">
+                <strong class="text-4xl">Alunos que já compraram.</strong>
+                <p class="max-w-[400px] text-center mt-4">Junte-se aos milhares de alunos de info que já estão vestindo a nossa camiseta linda e maravilhosa.</p>
+            </div>
+            <div class="flex justify-evenly mb-20">
+                <div class="flex flex-col items-center">
+                    <strong class="text-4xl">234+</strong>
+                    <p>Primeiro número</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <strong class="text-4xl">38,903+</strong>
+                    <p>Segundo número</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <strong class="text-4xl">154+</strong>
+                    <p>Terceiro número</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
