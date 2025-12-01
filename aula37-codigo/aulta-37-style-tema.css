@@ -1,0 +1,55 @@
+/* Customizando o tema 'corporate' via CSS variables */
+[data-theme="ifrn"] {
+    /* Cores de marca */
+    --color-primary: #0f766e;
+    --color-primary-content: #ffffff;
+
+    --color-secondary: #f97316;
+    --color-secondary-content: #000000;
+
+    --color-accent: #22c55e;
+    --color-accent-content: #000000;
+
+    --color-neutral: #0f172a;
+    --color-neutral-content: #e5e7eb;
+
+    /* Fundo e texto base */
+    --color-base-100: #0b1120;
+    /* fundo principal */
+    --color-base-200: #020617;
+    /* variação mais escura/clara */
+    --color-base-300: #020617;
+    --color-base-content: #e5e7eb;
+    /* texto padrão */
+
+    /* Estados de feedback */
+    --color-info: #38bdf8;
+    --color-info-content: #02131f;
+    --color-success: #22c55e;
+    --color-success-content: #02220f;
+    --color-warning: #facc15;
+    --color-warning-content: #1f1600;
+    --color-error: #f97373;
+    --color-error-content: #220101;
+
+    /* Border radius por tipo de componente */
+    --radius-selector: 999px;
+    /* checkbox, badge, toggle mais “pill” */
+    --radius-field: 0.25rem;
+    /* inputs, botões */
+    --radius-box: 0.5rem;
+    /* cards, modals, alerts */
+
+    /* Escala de componentes */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* Borda de tudo */
+    --border: 1px;
+
+    /* Efeitos globais */
+    --depth: 1;
+    /* relevo/sombra em alguns componentes */
+    --noise: 0;
+    /* ruído de fundo em temas mais “artísticos” */
+}

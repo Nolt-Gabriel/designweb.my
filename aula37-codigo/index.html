@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="ifrn">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Design de Interfaces – Página do Curso</title>
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" />
+    <link rel="stylesheet" href="aula-37-style-tema.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-base-100">
+
+    <!-- NAVBAR -->
+    <header class="navbar bg-base-200 shadow-sm px-4 md:px-8">
+        <div class="flex-1">
+            <a class="btn btn-ghost normal-case text-xl">
+                <span class="font-bold">Design de Interfaces</span>
+                <span class="hidden sm:inline-block opacity-70 ml-2 text-sm">
+                    / Fundamentos de Tema & DaisyUI
+                </span>
+            </a>
+        </div>
+
+        <div class="flex-none gap-4 items-center">
+            <!-- Indicador de turma -->
+            <div class="hidden md:flex flex-col text-right text-xs">
+                <span class="font-semibold uppercase tracking-wide">Turma 2025.1</span>
+                <span class="opacity-70">Noites · 60h</span>
+            </div>
+
+            <!-- Seletor de tema -->
+            <div class="form-control">
+                <label class="label flex flex-col items-start gap-1">
+                    <span class="label-text text-xs uppercase tracking-wide">
+                        Tema da interface
+                    </span>
+                    <select id="theme-select" class="select select-bordered select-sm w-40">
+                    </select>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="flex-1 py-8 px-4 md:px-8">
+        <div class="max-w-6xl mx-auto grid gap-8 lg:grid-cols-[2fr,1fr]">
+
+            <!-- COLUNA PRINCIPAL -->
+            <section class="space-y-6">
+
+                <!-- HERO / OVERVIEW DO CURSO -->
+                <div class="hero bg-base-200 rounded-box">
+                    <div class="hero-content flex-col lg:flex-row lg:items-start gap-10">
+
+                        <div class="space-y-4">
+                            <h1 class="text-3xl md:text-4xl font-bold">
+                                Design de Interfaces com Foco em Temas e Design Systems
+                            </h1>
+                            <p class="text-sm md:text-base opacity-80 max-w-2xl">
+                                Curso orientado a prática para entender como um
+                                <span class="font-semibold">design system baseado em tokens e temas</span>
+                                pode alinhar produto, UX e desenvolvimento.
+                            </p>
+                            <div class="flex flex-wrap gap-3 items-center">
+                                <div class="badge badge-primary">Nível intermediário</div>
+                                <div class="badge badge-outline">Projeto prático</div>
+                                <div class="badge badge-outline">Foco em Tailwind + DaisyUI</div>
+                            </div>
+
+                            <div class="flex flex-wrap gap-3 pt-2">
+                                <button class="btn btn-primary">
+                                    Ver plano de aula
+                                </button>
+                                <button class="btn btn-ghost">
+                                    Baixar cronograma
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BLOCO: OBJETIVOS DE APRENDIZAGEM -->
+                <section class="card bg-base-100 shadow-sm border border-base-200">
+                    <div class="card-body">
+                        <h2 class="card-title text-lg md:text-xl">
+                            Objetivos de aprendizagem
+                        </h2>
+                        <p class="text-sm opacity-80">
+                            Ao final do curso, o aluno deve ser capaz de estruturar um design system
+                            mínimo, implementar temas e negociar decisões visuais com times de produto
+                            e desenvolvimento sem cair na guerra de opinião.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-4 pt-4 text-sm">
+                            <div class="space-y-2">
+                                <h3 class="font-semibold text-sm">Fundamentos</h3>
+                                <ul class="list-disc list-inside opacity-80">
+                                    <li>Design system & tokens</li>
+                                    <li>Temas e identidade visual</li>
+                                    <li>Princípios de consistência</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="font-semibold text-sm">Hands-on</h3>
+                                <ul class="list-disc list-inside opacity-80">
+                                    <li>Tailwind + DaisyUI via CDN</li>
+                                    <li>Componentização na prática</li>
+                                    <li>Protótipo navegável</li>
+                                </ul>
+                            </div>
+                            <div class="space-y-2">
+                                <h3 class="font-semibold text-sm">Visão de produto</h3>
+                                <ul class="list-disc list-inside opacity-80">
+                                    <li>Trade-offs de tema</li>
+                                    <li>Modo claro/escuro</li>
+                                    <li>Governança de design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- MÓDULOS DO CURSO -->
+                <section class="space-y-4">
+                    <div class="flex items-center justify-between gap-4">
+                        <h2 class="text-lg md:text-xl font-semibold">
+                            Módulos do curso
+                        </h2>
+                        <div class="badge badge-neutral badge-sm">
+                            6 encontros · 10+ horas de prática
+                        </div>
+                    </div>
+
+                    <div class="timeline timeline-vertical">
+                        <!-- Módulo 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-start text-xs md:text-sm opacity-70">
+                                Aula 1
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="badge badge-primary badge-outline">1</div>
+                            </div>
+                            <div class="timeline-end timeline-box bg-base-100 max-w-xl">
+                                <h3 class="font-semibold mb-1">
+                                    Introdução a Design Systems e Tokens
+                                </h3>
+                                <p class="text-sm opacity-80 mb-2">
+                                    Conceitos, terminologia e exemplos de mercado. Alinhamento de vocabulário
+                                    entre design, produto e dev.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs">
+                                    <span class="badge badge-outline">Conceitos</span>
+                                    <span class="badge badge-outline">Discussão em grupo</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Módulo 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-start text-xs md:text-sm opacity-70">
+                                Aula 2
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="badge badge-primary badge-outline">2</div>
+                            </div>
+                            <div class="timeline-end timeline-box bg-base-100 max-w-xl">
+                                <h3 class="font-semibold mb-1">
+                                    Tailwind como infraestrutura de layout
+                                </h3>
+                                <p class="text-sm opacity-80 mb-2">
+                                    Utilitários, breakpoints e composição. Como evitar que o layout vire
+                                    “CSS freestyle”.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs">
+                                    <span class="badge badge-outline">Hands-on</span>
+                                    <span class="badge badge-outline">Refatoração</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Módulo 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-start text-xs md:text-sm opacity-70">
+                                Aula 3
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="badge badge-primary badge-outline">3</div>
+                            </div>
+                            <div class="timeline-end timeline-box bg-base-100 max-w-xl">
+                                <h3 class="font-semibold mb-1">
+                                    DaisyUI e temas na prática (via CDN)
+                                </h3>
+                                <p class="text-sm opacity-80 mb-2">
+                                    Componentes prontos, temas, uso de <code>data-theme</code> e
+                                    customizações simples com CSS variables.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs">
+                                    <span class="badge badge-outline">Demo ao vivo</span>
+                                    <span class="badge badge-outline">Exercício guiado</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Módulo 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-start text-xs md:text-sm opacity-70">
+                                Aula 4
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="badge badge-primary badge-outline">4</div>
+                            </div>
+                            <div class="timeline-end timeline-box bg-base-100 max-w-xl">
+                                <h3 class="font-semibold mb-1">
+                                    Troca de tema via JavaScript
+                                </h3>
+                                <p class="text-sm opacity-80 mb-2">
+                                    Preferência do usuário, persistência em <code>localStorage</code> e
+                                    discussões sobre acessibilidade e contraste.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs">
+                                    <span class="badge badge-outline">JS básico</span>
+                                    <span class="badge badge-outline">UX &amp; A11y</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Módulo 5 -->
+                        <div class="timeline-item">
+                            <div class="timeline-start text-xs md:text-sm opacity-70">
+                                Aula 5
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="badge badge-primary badge-outline">5</div>
+                            </div>
+                            <div class="timeline-end timeline-box bg-base-100 max-w-xl">
+                                <h3 class="font-semibold mb-1">
+                                    Projeto: página de produto com temas
+                                </h3>
+                                <p class="text-sm opacity-80 mb-2">
+                                    Cada grupo define um mini design system e implementa em uma página com
+                                    troca de tema funcional.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs">
+                                    <span class="badge badge-outline">Trabalho em grupo</span>
+                                    <span class="badge badge-outline">Entrega parcial</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Módulo 6 -->
+                        <div class="timeline-item">
+                            <div class="timeline-start text-xs md:text-sm opacity-70">
+                                Aula 6
+                            </div>
+                            <div class="timeline-middle">
+                                <div class="badge badge-primary badge-outline">6</div>
+                            </div>
+                            <div class="timeline-end timeline-box bg-base-100 max-w-xl">
+                                <h3 class="font-semibold mb-1">
+                                    Apresentações, feedback e retro
+                                </h3>
+                                <p class="text-sm opacity-80 mb-2">
+                                    Apresentação dos projetos, feedback cruzado e discussão sobre
+                                    decisões de design e trade-offs técnicos.
+                                </p>
+                                <div class="flex flex-wrap gap-2 text-xs">
+                                    <span class="badge badge-outline">Apresentação</span>
+                                    <span class="badge badge-outline">Feedback 360°</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </section>
+
+            <!-- SIDEBAR -->
+            <aside class="space-y-6">
+
+                <!-- Próxima aula -->
+                <div class="card bg-base-100 shadow-sm border border-base-200">
+                    <div class="card-body space-y-3">
+                        <h2 class="card-title text-base md:text-lg">
+                            Próxima aula
+                        </h2>
+                        <div class="flex items-center gap-3">
+                            <div class="avatar placeholder">
+                                <div class="bg-primary text-primary-content rounded-full w-10">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="text-sm">
+                                <div class="font-semibold">
+                                    Tailwind como infraestrutura
+                                </div>
+                                <div class="opacity-70">
+                                    Terça · 19h–22h · Laboratório 3
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divider my-1"></div>
+                        <ul class="text-sm opacity-80 space-y-1">
+                            <li>• Trazer notebook configurado</li>
+                            <li>• Rever anotações da Aula 1</li>
+                            <li>• Leitura prévia sobre atomic design</li>
+                        </ul>
+                        <div class="card-actions justify-end pt-2">
+                            <button class="btn btn-outline btn-sm">
+                                Ver materiais da aula
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info rápida -->
+                <div class="card bg-base-100 shadow-sm border border-base-200">
+                    <div class="card-body space-y-3 text-sm">
+                        <h2 class="card-title text-base md:text-lg">
+                            Informações rápidas
+                        </h2>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <div class="opacity-60 text-xs uppercase">Carga horária</div>
+                                <div class="font-semibold">60 horas</div>
+                            </div>
+                            <div>
+                                <div class="opacity-60 text-xs uppercase">Formato</div>
+                                <div class="font-semibold">Presencial</div>
+                            </div>
+                            <div>
+                                <div class="opacity-60 text-xs uppercase">Entrega final</div>
+                                <div class="font-semibold">Página temática</div>
+                            </div>
+                            <div>
+                                <div class="opacity-60 text-xs uppercase">Avaliação</div>
+                                <div class="font-semibold">Projeto + participação</div>
+                            </div>
+                        </div>
+                        <div class="divider my-2"></div>
+                        <div class="space-y-2">
+                            <div class="opacity-60 text-xs uppercase">
+                                Links importantes
+                            </div>
+                            <ul class="space-y-1">
+                                <li>
+                                    <a href="#" class="link link-primary">
+                                        Repositório de exemplos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link link-primary">
+                                        Guia de tokens e temas
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link link-primary">
+                                        Política de avaliação
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aviso "modo laboratório" -->
+                <div class="alert alert-info">
+                    <span class="font-semibold">Modo laboratório:</span>
+                    <span class="text-sm">
+                        Esta página é demo. O objetivo é inspecionar, quebrar e remontar
+                        os componentes sem dó.
+                    </span>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+
+    <footer class="bg-base-200 mt-8">
+        <div
+            class="max-w-6xl mx-auto px-4 md:px-8 py-4 flex flex-col md:flex-row items-center justify-between gap-3 text-sm opacity-80">
+            <div>
+                © 2025 · Curso de Design de Interfaces · Todos os direitos reservados.
+            </div>
+            <div class="flex flex-wrap gap-3 items-center">
+                <span>Docente responsável</span>
+                <span class="badge badge-outline">Prof. Dexter</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        (function () {
+            const html = document.documentElement;
+            const select = document.getElementById('theme-select');
+
+            select.addEventListener('change', () => {
+                html.setAttribute('data-theme', select.value);
+            });
+
+
+            const THEME_OPTIONS = [
+                { value: "light", label: "light" },
+                { value: "dark", label: "dark" },
+                { value: "cupcake", label: "cupcake" },
+                { value: "dracula", label: "dracula" },
+                { value: "ifrn", label: "ifrn" } // tema custom
+            ];
+
+            THEME_OPTIONS.forEach(theme => {
+                const opt = document.createElement("option");
+                opt.value = theme.value;
+                opt.textContent = theme.label;
+                select.appendChild(opt);
+            });
+
+
+        })();
+    </script>
+
+</body>
+
+</html>
